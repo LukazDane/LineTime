@@ -1,0 +1,140 @@
+* {
+  border: 1px solid balck;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #99e9c8;
+  color: #e49037;
+}
+/* nav */
+nav {
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(153, 226, 233, 0);
+  font-size: x-large;
+  z-index: 1;
+}
+i.fas.fa-bars {
+  /* border: 1px solid black; */
+  padding: 2px;
+  border-radius: 20%;
+  background-color: rgba(153, 226, 233, 0.8);
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #99e9c8; /* fallbaFk color */
+  background-color: rgba(153, 226, 233, 0.9); /* Mint w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  right: 20px;
+  font-size: 60px;
+}
+
+.overlay a {
+  font-size: xx-large;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* endnav */
+/* splash */
+#splash {
+  background-attachment: fixed;
+  background-image: url("/assetts/melanie-pongratz-694890-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: goldenrod; */
+  background-position: center;
+}
+#splash h1 {
+  padding-top: 15vh;
+}
+p {
+  display: block;
+  margin-block-start: 0.8em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  letter-spacing: -0.075rem;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+}
+/* end splash */
+section {
+  height: 100vh;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+section a {
+  font-size: xx-large;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+.story-img {
+  width: 100%;
+  height: auto;
+  /* margin: 5vh; */
+}
+
+/* mailchimp form */
+
+#mc_embed_signup {
+  width: -webkit-fill-available;
+  height: 100vh;
+}
+/* end mailchimp form */
