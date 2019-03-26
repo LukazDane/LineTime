@@ -8,8 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #99e9c8;
-  color: #e49037;
+  /* background-color: #99e9c8; */
+  color: black;
+}
+a {
+  color: black;
 }
 /* nav */
 nav {
@@ -21,6 +24,7 @@ nav {
   background-color: rgba(153, 226, 233, 0);
   font-size: x-large;
   z-index: 1;
+  color: black;
 }
 i.fas.fa-bars {
   /* border: 1px solid black; */
@@ -103,7 +107,7 @@ i.fas.fa-bars {
 #splash h1 {
   padding-top: 15vh;
 }
-p {
+section h1 {
   display: block;
   margin-block-start: 0.8em;
   margin-block-end: 1em;
@@ -127,8 +131,21 @@ section a {
 }
 .story-img {
   width: 100%;
-  height: auto;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* margin: 5vh; */
+}
+.story-img.one {
+  background-image: url(/assetts/christian-wiediger-606395-unsplash.jpg);
+}
+.story-img.two {
+  background-image: url(/assetts/christian-wiediger-606395-unsplash.jpg);
+}
+.story-img.three {
+  background-image: url(/assetts//christian-wiediger-606395-unsplash.jpg);
 }
 
 /* mailchimp form */
