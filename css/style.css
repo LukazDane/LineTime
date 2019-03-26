@@ -122,8 +122,12 @@ section {
   height: 100vh;
   text-align: center;
   padding-top: 5vh;
+  text-align: left;
 }
-
+section h1,
+section p {
+  text-align: left;
+}
 section a {
   font-size: xx-large;
   /* position: absolute; */
