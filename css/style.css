@@ -14,6 +14,9 @@ body {
 a {
   color: black;
 }
+hr {
+  margin-bottom: 0;
+}
 /* nav */
 nav {
   height: 5vh;
@@ -26,13 +29,16 @@ nav {
   z-index: 1;
   color: black;
 }
+nav a {
+  padding-left: 1rem;
+}
 i.fas.fa-bars {
   /* border: 1px solid black; */
   padding: 2px;
   border-radius: 20%;
 }
 
-/* The Overlay (background) */
+/* The Overlay */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
@@ -41,8 +47,7 @@ i.fas.fa-bars {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #99e9c8; /* fallbaFk color */
-  background-color: rgba(153, 226, 233, 0.9); /* Mint w/opacity */
+  background-color: white; /* fallback color */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -102,7 +107,7 @@ i.fas.fa-bars {
   background-repeat: no-repeat;
   /* background-color: goldenrod; */
   background-position: center;
-  height: 25vh;
+  height: 27vh;
   width: 90vw;
   margin: auto;
 }
@@ -193,9 +198,57 @@ section a {
 }
 
 /* end mailchimp form */
+/* download */
+section#download {
+  height: 103vh;
+}
+#download h1 {
+  font-size: xx-large;
+  margin: auto;
+}
+#download .clear {
+  text-align: center;
+}
+#download .button {
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 20px;
+  color: white;
+  background-color: dimgray;
+}
+.icons {
+  border: 2px solid black;
+  border-radius: 100%;
+  color: black;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+}
+/* end download */
 /* appstore links  */
 a img {
-  width: 60%;
+  width: 40%;
+  clear: both;
+  margin: 0 3em;
 }
-
+#download .row {
+  display: inline-flex;
+}
+.app-link {
+  height: 5em;
+  width: 5em;
+  margin: 0 1em;
+}
 /* end appstore links */
+/* footer */
+footer .row {
+  margin: 1em 1em 0 1em;
+}
+footer a {
+  font-size: medium;
+  padding: 1em;
+}
+/* end footer */
