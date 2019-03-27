@@ -5,9 +5,10 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #b3f7db;
 }
 * {
-  border: 1px solid balck;
+  /* border: 1px solid balck; */
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
@@ -116,7 +117,6 @@ i.fas.fa-bars {
   width: 130px;
 }
 
-
 @media screen and (max-width: 798px) {
   .badges-mobile {
     display: block;
@@ -124,6 +124,19 @@ i.fas.fa-bars {
 
   .badges-desktop {
     display: none;
+  }
+}
+
+.banner-text {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-text {
+    display: block;
+    position: relative;
+    top: 119px;
+    left: 197px;
   }
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -191,7 +204,7 @@ section h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0 -385px;
     width: 100vw;
     height: 578px;
   }
@@ -205,6 +218,7 @@ section {
   text-align: center;
   padding-top: 5vh;
   text-align: center;
+  background-color: white;
 }
 .story h1,
 .story p {
@@ -241,14 +255,21 @@ section a {
   section {
     padding-top: 0;
   }
-  section.story {
-    width: 30vw;
-    display: inline-table;
-  }
+
   section.story,
   section#download,
   section#splash {
     margin: 0 32px;
+  }
+  .story-img {
+    width: 295px;
+    height: 345px;
+    margin: auto;
+  }
+  section.story {
+    margin: auto;
+    width: 31vw;
+    display: inline-table;
   }
   .shadow {
     border-radius: 40px;
@@ -256,7 +277,10 @@ section a {
     /* border: 1px solid black; */
     margin: 32px;
     /* padding: 32px; */
-    background-color: rgba(0, 0, 0, 0);
+    background-color: white;
+  }
+  section#splash {
+    height: 60vh;
   }
 }
 
@@ -269,7 +293,7 @@ section a {
   border-radius: 30px;
   margin: 1rem;
   width: -webkit-fill-available;
-  background-color: #d3d3d3;
+  background-color: white;
   box-shadow: 0px 0px 10px 1px;
   /* height: 100vh; */
 }
@@ -279,10 +303,10 @@ section a {
 #mc_embed_signup .mc-field-group input {
   border: none;
   border-bottom: 2px solid grey;
-  background-color: #d3d3d3;
+  background-color: white;
 }
 #mc_embed_signup .button {
-  background-color: dimgray !important;
+  background-color: orange !important;
   border-radius: 20px !important;
 }
 #mc_embed_signup .mc-field-group input {
@@ -298,13 +322,13 @@ section a {
   #mc_embed_signup {
     position: relative;
     /* float: right; */
-    width: 50vw;
+    width: 40vw;
     display: inline-block;
   }
   .dt-text {
     display: block;
     text-align: left;
-    width: 48vw;
+    width: 43vw;
     position: relative;
     display: inline-block;
   }
@@ -322,11 +346,11 @@ section#download {
   text-align: center;
 }
 #download .button {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   border-radius: 20px;
   color: white;
-  background-color: dimgray;
+  background-color: orange;
 }
 .icons {
   border: 2px solid black;
@@ -338,6 +362,11 @@ section#download {
   text-align: center;
   margin: auto;
   padding: 3px;
+}
+@media screen and (min-width: 1024px) {
+  section#download {
+    height: auto;
+  }
 }
 /* end download */
 /* appstore links  */
