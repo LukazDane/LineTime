@@ -17,11 +17,11 @@ a {
 /* nav */
 nav {
   height: 5vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(153, 226, 233, 0);
+  /* background-color: rgba(153, 226, 233, 0); */
   font-size: x-large;
   z-index: 1;
   color: black;
@@ -30,7 +30,6 @@ i.fas.fa-bars {
   /* border: 1px solid black; */
   padding: 2px;
   border-radius: 20%;
-  background-color: rgba(153, 226, 233, 0.8);
 }
 
 /* The Overlay (background) */
@@ -96,37 +95,46 @@ i.fas.fa-bars {
 }
 /* endnav */
 /* splash */
-#splash {
-  background-attachment: fixed;
+.splash-img {
+  /* background-attachment: fixed; */
   background-image: url("/assetts/melanie-pongratz-694890-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: goldenrod; */
   background-position: center;
+  height: 25vh;
+  width: 90vw;
+  margin: auto;
 }
 #splash h1 {
-  padding-top: 15vh;
+  text-align: left;
+  padding-left: 1rem;
 }
 section h1 {
   display: block;
   margin-block-start: 0.8em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   letter-spacing: -0.075rem;
   font-size: 2.5rem;
   line-height: 2.625rem;
 }
+
 /* end splash */
 section {
   height: 100vh;
   text-align: center;
   padding-top: 5vh;
-  text-align: left;
+  text-align: center;
 }
-section h1,
-section p {
+.story h1,
+.story p {
   text-align: left;
+  padding: 0 3vh;
+  font-weight: 100;
+}
+.story p {
+  font-size: larger;
 }
 section a {
   font-size: xx-large;
@@ -146,16 +154,48 @@ section a {
   background-image: url(/assetts/christian-wiediger-606395-unsplash.jpg);
 }
 .story-img.two {
-  background-image: url(/assetts/christian-wiediger-606395-unsplash.jpg);
+  background-image: url(/assetts/iceline.jpg);
 }
 .story-img.three {
-  background-image: url(/assetts//christian-wiediger-606395-unsplash.jpg);
+  background-image: url(/assetts/kendyle-nelsen-236473-unsplash.jpg);
 }
 
 /* mailchimp form */
 
 #mc_embed_signup {
+  border-radius: 30px;
+  margin: 1rem;
   width: -webkit-fill-available;
-  height: 100vh;
+  background-color: #d3d3d3;
+  box-shadow: 0px 0px 10px 1px;
+  /* height: 100vh; */
 }
+#mc_embed_signup form {
+  padding: 2rem !important;
+}
+#mc_embed_signup .mc-field-group input {
+  border: none;
+  border-bottom: 2px solid grey;
+  background-color: #d3d3d3;
+}
+#mc_embed_signup .button {
+  background-color: dimgray !important;
+  border-radius: 20px !important;
+}
+#mc_embed_signup .mc-field-group input {
+  text-indent: 0% !important;
+  padding: 8px 0px 0px 0px !important;
+}
+#mc_embed_signup .clear {
+  clear: both;
+  text-align: center;
+  padding-top: 2vh;
+}
+
 /* end mailchimp form */
+/* appstore links  */
+a img {
+  width: 60%;
+}
+
+/* end appstore links */

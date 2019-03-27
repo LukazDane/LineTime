@@ -20,6 +20,11 @@
     />
 
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -50,32 +55,19 @@
     </div>
 
     <section id="splash">
-      <p>
-        Don't let this be you<br />
-        skip the queue
-      </p>
-      <p>-LineTime-</p>
-      <br />
-      <a href="#section1"
-        >Check us out!<br /><i class="fas fa-caret-down"></i
-      ></a>
-    </section>
-    <section id="signup">
+      <h1>
+        Get outta line.<br />
+        Save time.
+      </h1>
+
+      <div class="splash-img"></div>
       <!-- Begin Mailchimp Signup Form -->
       <link
         href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
         rel="stylesheet"
         type="text/css"
       />
-      <style type="text/css">
-        #mc_embed_signup {
-          background: #fff;
-          clear: left;
-          font: 14px Helvetica, Arial, sans-serif;
-        }
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
+
       <div id="mc_embed_signup">
         <form
           action="https://aol.us20.list-manage.com/subscribe/post?u=557d6dd37f3da2a188a023e9b&amp;id=d072dadf79"
@@ -87,25 +79,10 @@
           novalidate
         >
           <div id="mc_embed_signup_scroll">
-            <h2>Subscribe to our mailing list</h2>
-            <div class="indicates-required">
-              <span class="asterisk">*</span> indicates required
-            </div>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL"
-                >Email Address <span class="asterisk">*</span>
-              </label>
-              <input
-                type="email"
-                value=""
-                name="EMAIL"
-                class="required email"
-                id="mce-EMAIL"
-              />
-            </div>
             <div class="mc-field-group">
               <label for="mce-FNAME">First Name </label>
               <input
+                placeholder="Your name here"
                 type="text"
                 value=""
                 name="FNAME"
@@ -116,11 +93,23 @@
             <div class="mc-field-group">
               <label for="mce-LNAME">Last Name </label>
               <input
+                placeholder="Your last name here"
                 type="text"
                 value=""
                 name="LNAME"
                 class=""
                 id="mce-LNAME"
+              />
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email </label>
+              <input
+                placeholder="brock@brockmail.com"
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
               />
             </div>
             <div id="mce-responses" class="clear">
@@ -147,7 +136,8 @@
             <div class="clear">
               <input
                 type="submit"
-                value="Subscribe"
+                value="JOIN US"
+                style="font-size:1.5rem; padding:0rem 2em; font-weight:lighter"
                 name="subscribe"
                 id="mc-embedded-subscribe"
                 class="button"
@@ -178,6 +168,8 @@
         var $mcj = jQuery.noConflict(true);
       </script>
       <!--End mc_embed_signup-->
+      <br />
+      <a href="#section1"><br /><i class="fas fa-caret-down"></i></a>
     </section>
     <section class="story" id="section1">
       <div class="story-img one"></div>
@@ -186,31 +178,53 @@
       </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus
-        id corporis ut, aliquam, similique quidem aliquid, quam perferendis
-        sequi excepturi in tempora minima nesciunt qui provident dolor. Id, a?
+        id corporis ut, aliquam
       </p>
       <a href="#section2"><i class="fas fa-caret-down"></i></a>
     </section>
     <section class="story" id="section2">
       <div class="story-img two"></div>
       <h1>
-        Story 2
+        Lorem ipsum dolor sit amet
       </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus
+        id corporis ut, aliquam
+      </p>
       <a href="#section3"><i class="fas fa-caret-down"></i></a>
     </section>
     <section class="story" id="section3">
       <div class="story-img three"></div>
       <h1>
-        Story 3
+        Lorem ipsum dolor sit amet
       </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus
+        id corporis ut, aliquam
+      </p>
       <a href="#download"><i class="fas fa-caret-down"></i></a>
-    </section id="download">
-    <section>
-      <h1>LIKE WHAT YOU SEE?</h1>
-      <button type="button"><a href="#signup">Sign-Up</a></button>
-      <hr />
     </section>
-    <section></section>
+    <section id="download">
+      <h1>LIKE WHAT YOU SEE?</h1>
+      <button type="button"><a href="#splash">Sign-Up</a></button>
+      <hr />
+      <h1>Download</h1>
+      <a
+        href="https://play.google.com/store/apps/details?id=games.wfs.anothereden&hl=en_US&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        ><img
+          alt="Get it on Google Play"
+          src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+      /></a>
+      <a
+        href="//www.microsoft.com/store/apps/9pnkzmqzb3b6?cid=storebadge&ocid=badge"
+        ><img
+          src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"
+          alt="English badge"
+          style="width: 225px; height: 87.06px;"
+      /></a>
+    </section>
+    <!-- <section></section> -->
+    <footer></footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
