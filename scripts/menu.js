@@ -15,3 +15,5 @@ $(document).on("scroll", function(e) {
   var rgba = $(document).scrollTop() / 500;
   $(".nav").css("background-color", "rgba(153, 226, 233," + rgba + ")");
 });
+
+// character restriction
