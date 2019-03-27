@@ -46,7 +46,11 @@ i.fas.fa-bars {
   padding: 2px;
   border-radius: 20%;
 }
-
+@media screen and (min-width: 1024px) {
+  i.fas.fa-bars {
+    display: none;
+  }
+}
 /* The Overlay */
 
 .overlay {
@@ -131,6 +135,7 @@ i.fas.fa-bars {
   width: 90vw;
   margin: auto;
 }
+
 #splash h1 {
   text-align: left;
   padding-left: 1rem;
@@ -146,7 +151,27 @@ section h1 {
   font-size: 2.5rem;
   line-height: 2.625rem;
 }
+#desktop-splash {
+  display: none;
+}
 
+@media screen and (min-width: 1024px) {
+  .splash-img {
+    display: none;
+  }
+  #desktop-splash {
+    display: block;
+    background-image: url("/assetts/melanie-pongratz-694890-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+  }
+  #splash h1 {
+    display: none;
+  }
+}
 /* end splash */
 section {
   height: 100vh;
@@ -186,7 +211,18 @@ section a {
 .story-img.three {
   background-image: url(/assetts/kendyle-nelsen-236473-unsplash.jpg);
 }
-
+@media screen and (min-width: 1024px) {
+  section {
+    padding-top: 0;
+  }
+  section.story {
+    width: 30vw;
+    display: inline-table;
+  }
+}
+.dt-text {
+  display: none;
+}
 /* mailchimp form */
 
 #mc_embed_signup {
@@ -218,7 +254,19 @@ section a {
   text-align: center;
   padding-top: 2vh;
 }
-
+@media screen and (min-width: 1024px) {
+  #mc_embed_signup {
+    position: relative;
+    /* float: right; */
+    width: 50vw;
+  }
+  .dt-text {
+    display: block;
+    text-align: left;
+    width: 48vw;
+    position: relative;
+  }
+}
 /* end mailchimp form */
 /* download */
 section#download {
