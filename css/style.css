@@ -85,6 +85,32 @@ i.fas.fa-bars {
   font-size: 60px;
 }
 
+/*Hide the badges in desktop and line up in a row*/
+
+.badges-mobile {
+  display: none;
+}
+
+.badges-desktop {
+  display: flex;
+  align-items: center;
+}
+
+/*make apple app store microsoft acceptable size */
+.badges-desktop img {
+  width: 130px;
+}
+
+
+@media screen and (max-width: 798px) {
+  .badges-mobile {
+    display: block;
+  }
+
+  .badges-desktop {
+    display: none;
+  }
+}
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {
