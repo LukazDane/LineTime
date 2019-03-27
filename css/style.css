@@ -126,7 +126,7 @@ i.fas.fa-bars {
 /* splash */
 .splash-img {
   /* background-attachment: fixed; */
-  background-image: url("/assetts/melanie-pongratz-694890-unsplash.jpg");
+  background-image: url("/assetts/wireframe-png/Mobile_HeroImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: goldenrod; */
@@ -161,12 +161,13 @@ section h1 {
   }
   #desktop-splash {
     display: block;
-    background-image: url("/assetts/melanie-pongratz-694890-unsplash.jpg");
+    background-image: url("/assetts/wireframe-png/Mobile_HeroImage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     width: 100vw;
+    height: 578px;
   }
   #splash h1 {
     display: none;
@@ -196,20 +197,19 @@ section a {
 .story-img {
   width: 100%;
   height: 50vh;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   /* margin: 5vh; */
 }
 .story-img.one {
-  background-image: url(/assetts/christian-wiediger-606395-unsplash.jpg);
+  background-image: url(/assetts/wireframe-png/Storyboard_01.png);
 }
 .story-img.two {
-  background-image: url(/assetts/iceline.jpg);
+  background-image: url(/assetts/wireframe-png/Storyboard_02.png);
 }
 .story-img.three {
-  background-image: url(/assetts/kendyle-nelsen-236473-unsplash.jpg);
+  background-image: url(/assetts/wireframe-png/Storyboard_03.png);
 }
 @media screen and (min-width: 1024px) {
   section {
@@ -219,7 +219,21 @@ section a {
     width: 30vw;
     display: inline-table;
   }
+  section.story,
+  section#download,
+  section#splash {
+    margin: 0 32px;
+  }
+  .shadow {
+    border-radius: 40px;
+    box-shadow: 1px 1px 4px 6px;
+    /* border: 1px solid black; */
+    margin: 32px;
+    /* padding: 32px; */
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
+
 .dt-text {
   display: none;
 }
@@ -259,12 +273,14 @@ section a {
     position: relative;
     /* float: right; */
     width: 50vw;
+    display: inline-block;
   }
   .dt-text {
     display: block;
     text-align: left;
     width: 48vw;
     position: relative;
+    display: inline-block;
   }
 }
 /* end mailchimp form */
@@ -323,11 +339,9 @@ footer a {
 }
 /* end footer */
 
-
 /*modal styling */
 #subscribeModal {
   width: 100%;
-  
 }
 
 #closeModal {
@@ -346,8 +360,9 @@ footer a {
   border-radius: 5px;
 }
 
-.modal-header,.modal-body {
-  background-color: rgb(254,217,153);
+.modal-header,
+.modal-body {
+  background-color: rgb(254, 217, 153);
   height: 100%;
 }
 
